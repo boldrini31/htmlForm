@@ -1,0 +1,146 @@
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .col-0 {width: 0.5%;}
+    .col-1 {width: 8.33%;}
+    .col-1-5{width: 12%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .top{
+        
+        list-style-type: none;
+        background-color: rgb(71, 0, 75);
+       padding: 0;
+       margin: 0;
+       
+     
+        
+    }
+    li {
+        display: flex;
+        line-height: 40px;
+        max-width: 150px;
+        text-align: center;
+        color: white;
+    
+    }
+  
+    .button a:hover {
+        color: white;
+        background-color: rgb(56, 1, 56);
+    }
+    .car1 ,.bus {
+        color: white;
+        text-decoration:none;
+    }
+    .car1 {
+        float: right;
+        margin-top: 0.1%;
+        padding: 1% 0;
+    }
+    .btop {
+        margin: auto 1%;
+        height: 60px;
+        padding: 8px;
+        height: 100%;
+        align-items: center;
+        color: white;
+        text-decoration: white;
+    }
+    .car {
+        display: block;
+        border: 1px hidden;
+        border-radius: 12px;
+        padding: 0 10px;
+        background-color: rgb(113, 9, 122);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    .logotop {
+        margin: 5%;
+    }
+    .cad {
+        margin: 2% 6%;
+    }
+    #cadastro {
+        color: rgb(2, 255, 132);
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container{
+        display: block;
+    }
+    .main{
+        display: block;
+        border: 4px solid rgb(153, 19, 66); 
+        margin: 0 6%;
+    }
+    .red {
+        color: rgb(153, 19, 66);
+    }
+    .teste {
+        padding: 2% 8%;
+    }
+    .teste1 {
+        padding: 1% 0 0 2%;
+    }
+    .teste2 {
+        padding: 1% 2% 0 0;
+    }
+    .pad {
+        margin: 3.5px;
+    }
+    .marg1 {
+        padding: 1% 0 0 10%;
+        font-size: 1.2vw;
+
+    }
+    .marg2 {
+        padding: 1% 5% 0 9%;
+        font-size: 1.2vw;
+    }
+    .sub {
+        padding: 1% 0 2% 2%;
+        
+    }
+    .padtop {
+        padding: 0 0 0 15%;
+    }
+    .padtop1{
+        padding-right: 15%;
+    }
+    .marg3{
+        margin-left: 2%;
+    }
+    .margf{
+        text-align: right;
+        margin-right: 40%;
+    }
+    .padc{
+        padding: 1% 0%;
+    }
+    
+
+    /********************RESPONSIVE LAYOUT********************/
+    @media only screen and (max-width: 800px){
+        
+       col-* {
+            width: 100%;
+          }
