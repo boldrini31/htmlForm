@@ -3,11 +3,11 @@ function confirmEmail() {
   const conEmail = document.getElementById("conEmail").value;
 
   if (email != conEmail) {
-    alert('Confirmação de email diferente')
-    document.getElementsById("conEmail").innerHTMl.style.border.color = "red";
+    console.log('Confirmação de email diferente')
+    const barra = document.getElementsById("conEmail").innerHTMl.style.border.color = "red";
   }
   else {
-    document.getElementsById("conEmail").style.border.color = "lightgray";
+    const barra = document.getElementsById("conEmail").style.border.color = "lightgray";
   }
 }
 
@@ -16,14 +16,14 @@ function confirmPass() {
   const conPass = document.getElementById("conPass").value;
 
   if (pass != conPass) {
-    alert('Password e Confirmação diferentes')
+    console.log('Password e Confirmação diferentes')
   }
 }
 
 function required() {
   const empt = document.getElementsByClassName['required'].value;
   if (empt == "") {
-    alert("Complete os campos obrigatorios em vermelho")
+    console.log("Complete os campos obrigatorios em vermelho")
     return false;
   }
 }
@@ -32,10 +32,10 @@ function validaCpf() {
   const regraValida = document.getElementById("cpf").value;
   const cpfValido = /^(([0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2})|([0-9]{11}))$/;
   if (cpfValido.test(regraValida) == true) {
-    alert("CPF Valido");
+    console.log("CPF Valido");
   }
   else {
-    alert("CPF Inválido");
+    console.log("CPF Inválido");
   }
 }
 
@@ -59,30 +59,34 @@ function mCPF(cpf) {
 
 function validaSobrenome() {
   const sobrenome = document.getElementById("snome").value;
-  const padrao = /[^a-zà-ú]/gi;
+  const padrao = /[^a-z  à-ú]/gi;
   const valida_sobrenome = sobrenome.match(padrao);
 
   if (valida_sobrenome || !sobrenome) {
-    alert("Sobrenome contem caracteres invalidos ou é vazio")
+    console.log("Sobrenome contem caracteres invalidos ou é vazio")
   }
   else {
     console.log("Sobrenome OK!")
+    const snome = sobrenome.trim();
+    console.log(snome)
   }
 }
 
 function validaNome() {
-  const nome = document.getElementById("nome").value;
+  const nomeValido = document.getElementById("nome").value;
 
-  const padrao = /[^a-zà-ú]/gi;
+  const padrao = /[^a-z à-ú]/gi;
 
-  const valida_nome = nome.match(padrao);
+  const valida_nome = nomeValido.match(padrao);
 
 
-  if (valida_nome || !nome) {
+  if (valida_nome || !nomeValido) {
     alert("Nome contem caracteres invalidos ou é vazio")
   }
   else {
     console.log("Nome OK!")
+    const nome = nomeValido.trim();
+    console.log(nome)
   }
 
 }
